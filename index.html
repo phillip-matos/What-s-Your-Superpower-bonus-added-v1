@@ -56,11 +56,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/What-s-Your-Superpower-bonus-added-v1.loader.js";
+      var loaderUrl = buildUrl + "/What-s-Your-Superpower-bonus-added-v1.asm.loader.js";
       var config = {
         dataUrl: buildUrl + "/What-s-Your-Superpower-bonus-added-v1.data.unityweb",
-        frameworkUrl: buildUrl + "/What-s-Your-Superpower-bonus-added-v1.framework.js.unityweb",
-        codeUrl: buildUrl + "/What-s-Your-Superpower-bonus-added-v1.wasm.unityweb",
+        frameworkUrl: buildUrl + "/What-s-Your-Superpower-bonus-added-v1.asm.framework.js.unityweb",
+        codeUrl: buildUrl + "/What-s-Your-Superpower-bonus-added-v1.asm.js.unityweb",
+        memoryUrl: buildUrl + "/What-s-Your-Superpower-bonus-added-v1.asm.mem.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "TeachMeTV",
         productName: "Wendy's Magical Mathcraft",
@@ -80,8 +81,7 @@
 
         var meta = document.createElement('meta');
         meta.name = 'viewport';
-        //meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
-        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes, shrink-to-fit=no';
+        meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
         document.getElementsByTagName('head')[0].appendChild(meta);
         container.className = "unity-mobile";
 
